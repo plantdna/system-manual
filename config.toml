@@ -1,0 +1,83 @@
+baseurl = "https://maizerc.github.io"
+DefaultContentLanguage = "en"
+title = "System Manuals"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  subtitle = ""
+  mainSections = ["post","posts"]
+  logo = "img/avatar-icon.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = false
+  delayDisqus = true
+  showRelatedPosts = true
+  selfHosted = true
+  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "Maize Research Center"
+  website= ""
+  email = "youremail@domain.com"
+  github = "plantdna/amgt-ts"
+
+[[menu.main]]
+    name = "Manual"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "systems"
+    name = "Systems"
+    weight = 2
+
+[[menu.main]]
+    parent = "systems"
+    name = "AMGT-TS"
+    url = "post/amgt-ts"
+    weight = 1
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
+
+[languages]
+  [languages.en] 
+    contentDir = "content/en" # English
+  [languages.zh-CN]
+    contentDir = "content/zh-CN" # Japanese
